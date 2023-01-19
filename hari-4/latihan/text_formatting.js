@@ -91,3 +91,5 @@ console.log(names.sort(germanPhonebook.compare).join(', ')); // Hochberg, Hönig
 //dictionary sort
 const germanDictionary = new Intl.Collator('de-DE-u-co-dict');
 console.log(names.sort(germanDictionary.compare).join(', ')); //Hochberg, Holzman, Hönigswald
+
+// apaan si?
