@@ -1,0 +1,5 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\FreeVirtualMemory.ps1
+
+CSName          FreeVirtualMemory
+------          -----------------
+LAPTOP-3J5MCDO1           2923524

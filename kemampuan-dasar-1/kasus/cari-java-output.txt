@@ -1,0 +1,11 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\kasus\cari-java.ps1
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\AnimasiDinamis_Retno Wati\src\animasidinamis
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Clipping_Retno Wati\src\clipping
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\GarisLingkaran\src\garislingkaran
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Grafika3D_Retno Wati\src\grafika3d
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Grafkom\JavaApplication22\src\javaapplication22
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\PohonFraktal\src\pohonfraktal
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Retno Wati _424196\AnimasiDinamis4\src\animasidinamis
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Retno Wati _424196\GarisLingkaran\src\garislingkaran
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Transformasi2D_Retno Wati\Retno Wati_#2_424196\GrafikFungsi\src\grafikfungsi
+Ada file Java pada direktori D:\DATA KULIAH\SEMESTER 3\GRAFIKA KOMPUTER\TUGAS\Transformasi2D_Retno Wati\TransformasiRefleksi\src\transformasirefleksi

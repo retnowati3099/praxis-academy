@@ -1,0 +1,16 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-Service.ps1
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  VMAuthdService     VMware Authorization Service
+Stopped  vmicguestinterface Hyper-V Guest Service Interface
+Stopped  vmicheartbeat      Hyper-V Heartbeat Service
+Stopped  vmickvpexchange    Hyper-V Data Exchange Service
+Stopped  vmicrdv            Hyper-V Remote Desktop Virtualizati...
+Stopped  vmicshutdown       Hyper-V Guest Shutdown Service
+Stopped  vmictimesync       Hyper-V Time Synchronization Service
+Stopped  vmicvmsession      Hyper-V PowerShell Direct Service
+Stopped  vmicvss            Hyper-V Volume Shadow Copy Requestor
+Running  VMnetDHCP          VMware DHCP Service
+Running  VMUSBArbService    VMware USB Arbitration Service
+Running  VMware NAT Service VMware NAT Service

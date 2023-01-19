@@ -1,0 +1,5 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime2.ps1
+
+CSName          Last Booted        
+------          -----------        
+LAPTOP-3J5MCDO1 09/01/2023 15:03:16

@@ -1,0 +1,2 @@
+Mohon maaf, Kak, saya tidak dapat mengerjakan praktik ini dikarenakan halaman  web yang tautannya tersedia pada soal tes tidak dapat ditemukan seperti pada gambar berikut.
+![halaman web tidak ditemukan](IMAGES/Screenshot%202023-01-10%20194702.png)

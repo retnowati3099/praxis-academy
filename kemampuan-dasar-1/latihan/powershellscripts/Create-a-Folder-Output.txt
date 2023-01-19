@@ -1,0 +1,9 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Create-a-Folder.ps1
+
+
+    Directory: D:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          1/9/2023   8:52 PM                retnowati3099

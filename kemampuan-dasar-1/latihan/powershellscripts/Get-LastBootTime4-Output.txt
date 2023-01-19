@@ -1,0 +1,37 @@
+PS C:\Windows\System32> help C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1
+
+NAME
+    C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1
+    
+SYNOPSIS
+    Shows when last your PC started up.
+    
+    
+SYNTAX
+    C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 [-ComputerName] <String> 
+    [<CommonParameters>]
+    
+    
+DESCRIPTION
+    This is a WMI wrapper function to get the time that your PC last started up.
+    
+
+RELATED LINKS
+    www.howtogeek.com 
+
+REMARKS
+    To see the examples, type: "get-help 
+    C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 -examples".
+    For more information, type: "get-help 
+    C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 -detailed".
+    For technical information, type: "get-help 
+    C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 -full".
+    For online help, type: "get-help 
+C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 -online"
+
+
+PS C:\users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime4.ps1 -ComputerName localhost
+
+CSName          Last Booted        
+------          -----------        
+LAPTOP-3J5MCDO1 09/01/2023 15:03:16

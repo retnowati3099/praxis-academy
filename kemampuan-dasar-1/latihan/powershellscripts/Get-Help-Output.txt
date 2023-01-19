@@ -1,0 +1,20 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-Help.ps1
+
+NAME
+    Format-Table
+
+SYNTAX
+    Format-Table [[-Property] <Object[]>] [-AutoSize] [-RepeatHeader] [-HideTableHeaders] [-Wrap] [-GroupBy <Object>]
+    [-View <string>] [-ShowError] [-DisplayError] [-Force] [-Expand {CoreOnly | EnumOnly | Both}] [-InputObject
+    <psobject>]  [<CommonParameters>]
+
+
+ALIASES
+    ft
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Format-Table -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113303.

@@ -1,0 +1,5 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime1.ps1
+
+CSName          LastBootUpTime           
+------          --------------           
+LAPTOP-3J5MCDO1 20230109150316.500000+420

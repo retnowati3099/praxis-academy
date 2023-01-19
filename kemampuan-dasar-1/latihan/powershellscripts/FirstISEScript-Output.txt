@@ -1,0 +1,2 @@
+PS C:\Users\LENOVO> C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\FirstISEScript.ps1
+Hello, retnowati3099!

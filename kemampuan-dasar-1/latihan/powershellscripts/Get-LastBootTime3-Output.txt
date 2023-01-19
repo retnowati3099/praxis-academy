@@ -1,0 +1,2 @@
+PS C:\Users\LENOVO> help C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\Get-LastBootTime3.ps1
+Get-LastBootTime3.ps1 [[-ComputerName] <string>]

@@ -1,0 +1,2 @@
+PS C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts> & "C:\praxis-academy\kemampuan-dasar-1\latihan\powershellscripts\FirstScript.ps1"
+Hello, retnowati3099!
