@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Retno Wati">
+    <meta name="description" content="check nomor telepon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Enter your phone number (with area code ) and then click "check". <br> The expected format is like ###-###-####</p>
+    <form id="form">
+        <input id="phone">
+        <button type="submit">Check</button>
+        <p id="output">Your number</p>
+    </form>
+    <script>
+        const form = document.querySelector("#form");
+        const input = document.querySelector("#phone");
+        const output = document.querySelector("#output");
+
+        const re = /^(?:\d{3}|\(\d{3}\))([-/.])\d{3}\1\d{4}$/;
+
+        function testInfo(phoneInput) {
+            const ok = re.exec(phoneInput.value);
+            output.textContent = ok ? `Thanks, your phone number is ${ok[0]}` : `${phoneInput.value} isn't a phone number with area code!`;
+        }
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            testInfo(input);
+        });
+
+        /*
+        querySelector digunakan untuk memilih sebuah elemen, pemilihannya bisa berdasarkan id, 
+        class, name, atau properti lainnya
+        */
+    </script>
+</body>
+
+</html>
