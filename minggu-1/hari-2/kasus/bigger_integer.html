@@ -27,17 +27,17 @@
         form = document.querySelector("#form");
 
         function checkInt(input1, input2) {
-            if (parseInt(input1.value) > parseInt(input2.value)) {
-                document.getElementById("integer").innerHTML = input1.value + " lebih besar dari " + input2.value;
-            } else if (parseInt(input1.value) < parseInt(input2.value)) {
-                document.getElementById("integer").innerHTML = input2.value + " lebih besar dari " + input1.value;
+            if (input1 > input2) {
+                document.getElementById("integer").innerHTML = input1 + " lebih besar dari " + input2;
+            } else if (input1 < input2) {
+                document.getElementById("integer").innerHTML = input2 + " lebih besar dari " + input1;
             } else {
-                document.getElementById("integer").innerHTML = input1.value + " sama dengan " + input2.value;
+                document.getElementById("integer").innerHTML = input1 + " sama dengan " + input2;
             }
         }
         form.addEventListener('submit', (event) => {
             event.preventDefault();
-            checkInt(input1, input2);
+            checkInt(parseInt(input1.value), parseInt(input2.value));
         });
     </script>
 </body>
