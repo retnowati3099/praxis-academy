@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mencek bilangan bulat terbesar dari 5 bilangan yang diberikan">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Largest of Five Numbers</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input1">Bilangan ke-1</label>
+        <input type="text" id="input1" name="input1">
+        <br><br>
+        <label for="input2">Bilangan ke-2</label>
+        <input type="text" id="input2" name="input2">
+        <br><br>
+        <label for="input3">Bilangan ke-3</label>
+        <input type="text" id="input3" name="input3">
+        <br><br>
+        <label for="input4">Bilangan ke-4</label>
+        <input type="text" id="input4" name="input4">
+        <br><br>
+        <label for="input5">Bilangan ke-5</label>
+        <input type="text" id="input5" name="input5">
+        <br><br>
+        <button type="submit">Check</button>
+    </form>
+    <script>
+        input1 = document.querySelector("#input1");
+        input2 = document.querySelector("#input2");
+        input3 = document.querySelector("#input3");
+        input4 = document.querySelector("#input4");
+        input5 = document.querySelector("#input5");
+        form = document.querySelector("#form");
+
+        function sort(a, b, c, d, e){
+            if (a >= b && a >= c && a >= d && a >= e){
+                alert("Bilangan bulat terbesarnya adalah " + a);
+            } else if (b >= a && b >= c && b >= d && b >= e){
+                alert("Bilangan bulat terbesarnya adalah " + b);
+            } else if (c >= a && c >= b && c >= d && c >= e){
+                alert("Bilangan bulat terbesarnya adalah " + c);
+            } else if (d >= a && d >= b && a >= c && d >= e){
+                alert("Bilangan bulat terbesarnya adalah " + d);
+            } else {
+                alert("Bilangan bulat terbesarnya adalah " + e);
+            }
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            sort(parseInt(input1.value), parseInt(input2.value), parseInt(input3.value), parseInt(input4.value), parseInt(input5.value))
+        })
+    </script>
+</body>
+</html>
