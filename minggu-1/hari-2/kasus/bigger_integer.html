@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Retno Wati">
+    <meta name="description" content="mencek bilangan bulat terbesar di antara dua bilangan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul</title>
+</head>
+
+<body>
+    <form id="form">
+        <label for="integer1">Bilangan bulat ke-1 :</label>
+        <input type="text" name="integer" id="integer1">
+        <br><br>
+        <label for="integer2">Bilangan bulat ke-2 :</label>
+        <input type="text" name="integer" id="integer2">
+        <br><br>
+        <button type="submit">Check</button>
+    </form>
+    <p id="integer"></p>
+    <script>
+        input1 = document.querySelector("#integer1");
+        input2 = document.querySelector("#integer2");
+        form = document.querySelector("#form");
+
+        function checkInt(input1, input2) {
+            if (parseInt(input1.value) > parseInt(input2.value)) {
+                document.getElementById("integer").innerHTML = input1.value + " lebih besar dari " + input2.value;
+            } else if (parseInt(input1.value) < parseInt(input2.value)) {
+                document.getElementById("integer").innerHTML = input2.value + " lebih besar dari " + input1.value;
+            } else {
+                document.getElementById("integer").innerHTML = input1.value + " sama dengan " + input2.value;
+            }
+        }
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            checkInt(input1, input2);
+        });
+    </script>
+</body>
+
+</html>
