@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Menentukan tanda positif atau negati dari perkalian tiga buah bilangan">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript conditional statement to find the sign of product of three numbers</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input1">Bilangan ke-1</label>
+        <input type="text" id="input1" name="input1">
+        <br><br>
+        <label for="input2">Bilangan ke-2</label>
+        <input type="text" id="input2" name="input2">
+        <br><br>
+        <label for="input3">Bilangan ke-3</label>
+        <input type="text" id="input3" name="input3">
+        <br><br>
+        <button type="submit">Check</button>
+    </form>
+    <script>
+        input1 = document.querySelector("#input1");
+        input2 = document.querySelector("#input2");
+        input3 = document.querySelector("#input3");
+        form = document.querySelector("#form");
+
+        function checkSign(a, b, c){
+            if((a *b * c) >= 0){
+                alert("The sign is +");
+            } else{
+                alert("The sign is -");
+            }
+        }
+
+        function checkSign(a, b, c){
+            if (a >= 0 && b >= 0 && c >= 0){
+                alert("The sign is +");
+            } else if (a < 0 && b >= 0 && c >= 0){
+                alert("The sign is -");
+            } else if (a >= 0 && b < 0 && c >= 0){
+                alert("The sign is -");
+            } else if (a >= 0 && b >= 0 && c < 0){
+                alert("The sign is -");
+            } else if (a < 0 && b < 0 && c >= 0){
+                alert("The sign is +");
+            } else if (a < 0 && b >= 0 && c < 0){
+                alert("The sign is +");
+            } else if (a >= 0 && b < 0 && c < 0){
+                alert("The sign is +");
+            } else{
+                alert("The sign is -");
+            }
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            checkSign(parseInt(input1.value), parseInt(input2.value), parseInt(input3.value));
+        })
+    </script>
+</body>
+</html>
