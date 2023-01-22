@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Menghitung GCD atau FPB dari dua bilangna bulat positif">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gcompute the greatest common divisor (GCD) of two positive integers</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input1">Bilangan ke-1 :</label>
+        <input type="text" id="input1" name="input1">
+        <br><br>
+        <label for="input2">Bilangan ke-2 :</label>
+        <input type="text" id="input2" name="input2">
+        <br><br>
+        <button type="submit">Hitung FPB</button>
+        <p id="gcd"></p>
+    </form>
+    <script>
+        let input1 = document.querySelector("#input1");
+        let input2 = document.querySelector("#input2");
+        let form = document.querySelector("#form");
+
+        function calGcd(a, b){  
+            let terkecil;
+            let gcd;
+            if (a > b){
+                terkecil = b;
+            } else{
+                terkecil = a;
+            }
+            for(i = 1; i <= terkecil; i++){
+                if ((a % i == 0) && (b % i == 0)){
+                    gcd = i;
+                }
+            }
+            document.getElementById("gcd").innerHTML = "FPB dari " + a + " dan " + b + " adalah " + gcd;
+        }
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            calGcd(parseInt(input1.value), parseInt(input2.value));
+        })
+    </script>
+</body>
+</html>
