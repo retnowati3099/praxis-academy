@@ -34,6 +34,9 @@ const Rectangle3 = class RectangleThree{
 // method
 // method dapat berupa plain function, async function, generator function, atau async generator function
 class Rectangle{
+    // field declarations
+    // height = 0;
+    // width;
     constructor (height, width){
         this.height = height;
         this.width = width;
@@ -106,7 +109,7 @@ class Dog extends Animal{
         super(name); // memanggil super class constructor dan memberikan parameter nama
     }
     speak (){
-        super.speak(); // memanggil method yang sama dari duper class
+        super.speak(); // memanggil method yang sama dari super class
         console.log(`${this.name} barks.`);
     }
 }
