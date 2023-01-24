@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="description" content="Mengkonversi suhu dari celcius ke fahrenheit dan sebaliknya">
     <meta name="author" content="Retno Wati">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,30 @@
 </head>
 
 <body>
-    <h1>Celcius ke Fahrenheit</h1>
-    <!-- <input type="number" name="celcius" id="celcius">
-    <label for="celcius">&#176C</label> -->
-    <button onclick="celciusToFahrenheit(40)">Celcius to Fahrenheit</button>
-    <p id="ctof"></p>
-    <h1>Fahrenheit ke Celcius</h1>
-    <button onclick="fahrenheitToCelcius(180)">Fahrenheit to Celcius</button>
-    <p id="ftoc"></p>
-    <h1>Keliling Lingkaran</h1>
+    <h3>Konversi suhu</h3>
+    <label>Celcius</label>
+    <input type="number" name="celcius" id="celcius" oninput="celciusToFahrenheit(this.value)" onchange="celciusToFahrenheit(this.value)">
+    <label for="celcius">&#176C</label>
+    <p>Fahrenheit: <span id="ctof">0</span> &#176F</p>
+    <br><br>
+    <label> Fahrenheit</label>
+    <input type="number" name="fahrenheit" id="fahrenheit" oninput="fahrenheitToCelcius(this.value)" onchange="fahrenheitToCelcius(this.value)">
+    <label for="fahrenheit">&#176F</label>
+    <p>Celcius: <span id="ftoc">0</span> &#176C</p>
+    <script>
+        // celcius ke fahrenheit
+        let celciusToFahrenheit = function(celcius) {
+                let fahrenheit = ((9 / 5) * celcius) + 32;
+                document.getElementById("ctof").innerHTML = fahrenheit.toFixed(2);
+            }
+
+        // fahrenheit ke celcius
+        let fahrenheitToCelcius = function(fahrenheit) {
+            let celcius = (5 / 9) * (fahrenheit - 32);
+            document.getElementById("ftoc").innerHTML = celcius.toFixed(2);
+        }
+    </script>
+    <!-- <h1>Keliling Lingkaran</h1>
     <button onclick="calcCircumfrence(10)">Keliling Lingkaran</button>
     <p id="keliling-lingkaran"></p>
     <h1>LuasLingkaran</h1>
@@ -27,7 +42,7 @@
     <p id="luas-lingkaran"></p>
     <script src="geometrizer.js"></script>
     <script src="temperature_converter.js"></script>
-    <script>
+    <script> -->
     </script>
 </body>
 
