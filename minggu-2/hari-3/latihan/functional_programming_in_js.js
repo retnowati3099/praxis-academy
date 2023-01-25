@@ -8,7 +8,7 @@ let meetups = [
 ];
 
 // 1. Array function
-// Imperative --> berfokus pada mendeskripsikan bagaimana program beroperasi
+// Imperative --> berfokus pada mendeskripsikan bagaimana program beroperasi (how to solve)
 let activeMeetups = [];
 for(let i = 0; i < meetups.length; i++){
     let m = meetups[i];
@@ -23,7 +23,7 @@ console.log(activeMeetups);
 //     { name: 'Angular', isActive: true, members: 900 }
 //   ] 
 
-// declarative --> berfokus pada apa yang harus dicapai oleh program
+// declarative --> berfokus pada apa yang harus dicapai oleh program (what to solve)
 let activeMeetupsFP = [];
 activeMeetupsFP = (meetups.filter(
     (m) => {
