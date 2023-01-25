@@ -22,6 +22,8 @@ console.log(activeMeetups);
 //     { name: 'JS', isActive: true, members: 450 },
 //     { name: 'Angular', isActive: true, members: 900 }
 //   ] 
+
+// declarative --> berfokus pada apa yang harus dicapai oleh program
 let activeMeetupsFP = [];
 activeMeetupsFP = (meetups.filter(
     (m) => {
@@ -73,3 +75,4 @@ console.log(meetups);
 //     date: 'today',
 //     place: 'Indonesia'
 //   ]
+
