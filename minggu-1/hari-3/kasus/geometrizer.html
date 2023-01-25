@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Menghitung luas dan keliling lingkaran">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geometrizer</title>
+</head>
+<body>
+    <label for="radius">Radius</label>
+    <input type="number" oninput="calcCircumfrence(this.value); calcArea(this.value)">
+    <p>The The circumference is <span id="keliling">NN</span></p>
+    <p>The area is <span id="luas">NN</span></p>
+    <script>
+        let radius;
+        function calcCircumfrence(radius){
+            let keliling = 2 * Math.PI * radius;
+            document.getElementById("keliling").innerHTML = keliling.toFixed(2);
+        }
+        function calcArea(radius){
+            let luas = Math.PI * Math.pow(radius, 2);
+            document.getElementById("luas").innerHTML = luas.toFixed(2);
+        }
+    </script>
+</body>
+</html>
