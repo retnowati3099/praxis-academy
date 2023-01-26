@@ -1,0 +1,37 @@
+<!-- Buat input HTML yang meminta input berupa alamat email, 
+setelah itu deteksi menggunakan regular expression apakah teks tersebut
+adalah email atau bukan. Jika, email, tampilkan pada alert: 
+Halo, username anda adalah username, domain anda adalah domain.tld.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mendeteksi alamat email menggunakan regular expression">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Email</title>
+</head>
+<body>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <button type="submit" onclick="cekEmail()">Cek Email</button>
+    <script>
+        function cekEmail(){
+            let input = document.getElementById("email"); // mendapatkan elemen dengan id "email" --> input
+            let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            let username = /^[\w-\.]+/g;
+            let domain = /([\w-]+\.)+[\w-]{2,4}$/g;
+            console.log((input.value.toString()).match(regex));
+            console.log((input.value.toString()).match(username));
+            console.log((input.value.toString()).match(domain));
+            if(regex.test(input.value)){
+                alert(`Halo, username anda adalah ${(input.value.toString()).match(username)} domain anda adalah ${(input.value.toString()).match(domain)}`);
+            }else{
+                alert(`Alamat email ${input.value} tidak valid.`);
+            }
+        }
+      </script>
+</body>
+</html>
