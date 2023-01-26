@@ -23,9 +23,6 @@ Halo, username anda adalah username, domain anda adalah domain.tld.-->
             let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
             let username = /^[\w-\.]+/g;
             let domain = /([\w-]+\.)+[\w-]{2,4}$/g;
-            console.log((input.value.toString()).match(regex));
-            console.log((input.value.toString()).match(username));
-            console.log((input.value.toString()).match(domain));
             if(regex.test(input.value)){
                 alert(`Halo, username anda adalah ${(input.value.toString()).match(username)} domain anda adalah ${(input.value.toString()).match(domain)}`);
             }else{
