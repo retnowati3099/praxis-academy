@@ -1,4 +1,4 @@
-// Dalam functional programming, function adalah firs class citizen
+// Dalam functional programming, function adalah first class citizen
 
 // Function dapaT di-assign ke variabel
 const f = (m) => console.log(m);
