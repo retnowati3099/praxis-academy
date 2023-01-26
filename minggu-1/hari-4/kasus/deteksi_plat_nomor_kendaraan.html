@@ -1,0 +1,40 @@
+<!-- Buat input HTML yang meminta input berupa teks, 
+setelah itu deteksi menggunakan regular expression apakah teks tersebut 
+adalah plat nomor kendaraan di Indonesia atau bukan. 
+Gunakan alert untuk menampilkan hasilnya. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Mencek plat nomor kendaraan di Indonesia">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Plat Nomor Kendaraan</title>
+</head>
+<body>
+    <form id="form">
+        <label>Plat nomor kendaraan: </label>
+        <input type="text" name="plat-kendaraan" id="plat-kendaraan">
+        <br><br>
+        <button type="submit">Cek</button>
+    </form>
+    <script>
+        const form = document.querySelector("#form")
+        const platNomor= document.querySelector("#plat-kendaraan");
+        const regex = /^[A-Za-z]{1,2}[-]\d{4}[-][A-Za-z]{1,3}$/;
+        function cekPlatNomor(platNomor){
+            ok = regex.test(platNomor.value);
+            if (ok){
+                alert(platNomor.value + " termasuk plat nomor kendaraan di Indonesia");
+            } else{
+                alert(" bukan plat nomor kendaraan di Indonesia");
+            }
+        }
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            cekPlatNomor(platNomor);
+        });
+    </script>
+</body>
+</html>
