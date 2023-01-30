@@ -1,0 +1,59 @@
+<!-- Dengan HTML DOM, JavaScript dapat mengakses dan mengubah semua elemen HTML document -->
+<!-- ketika halaman web dimuat,browser membuat DOM halaman -->
+<!-- DOM adalah standar W3C(World WIde WEB Consortium)
+DOM mendefinisikan standar untuk pengaksesam dokomen
+Standar DOM W3C dipisahkan menjadi 3 bagian berbeda:
+- COre DOM - model standar untuk semua tipe dokumen
+- XML DOM - model standar untuk dokumen XML
+- HTML DOM - model standar untuk dokumen HTML -->
+<!-- HTML DOM adalah model objek standar dan interface pemrograman untuk HTML yang mendefinisikan:
+- Elemen HTML sebagai objek
+- Properti dari semua elemen HTML
+- Method untuk mengakses semua elemen HTML
+- Event untuk semua elemen HTML -->
+<!-- HTML DOM dapat didefinisikan sebagai standar untuk bagaimana mendapatkan, mengubah, menambah, atau men-delete elemen HTML -->
+
+<!-- Mengubah konten (innerHTML) dari elemen <p> dengan id="demo" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Retno Wati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM Method</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="name">Retno Wati</p>
+    <p id="intro"></p>
+    <p id="demo1"></p>
+    <p class="hobi">Aku hobi membaca.</p>
+    <p class="hobi">Aku juga hobi menulis.</p>
+    <p id="all-hobbies"></p>
+    <p class="color">Aku suka warna biru.</p>
+    <p class="color">Aku juga suka warna merah.</p>
+    <p id="all-colors"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World!";
+        // getElementById adalah method, sedangkan innerHTML adalah properti
+        // properti innerHTML dapat digunakan untuk mendapatkan atau mengubah elemen HTML
+    
+        // Menemukan elemen HTML dengan id
+        const myName = document.getElementById("name");
+        document.getElementById("intro").innerHTML = `Hallo, namaku ${myName.innerHTML}`;
+
+        // Menemukan elemen HTML dengan tag name
+        const element = document.getElementsByTagName("p");
+        document.getElementById("demo1").innerHTML = `${element[2].innerHTML}. Biasa dipanggil Retno.`;
+        
+        // Menemukan elemen HTML dengan class name
+        const hobi = document.getElementsByClassName("hobi");
+        document.getElementById("all-hobbies").innerHTML = hobi[0].innerHTML + " " + hobi[1].innerHTML;
+
+        // Menemukan elemen HTML dengan CSS selector
+        const warna = document.querySelectorAll(".color");
+        document.getElementById("all-colors").innerHTML = warna[0].innerHTML + " " + warna[1].innerHTML;
+    </script>
+</body>
+</html>
