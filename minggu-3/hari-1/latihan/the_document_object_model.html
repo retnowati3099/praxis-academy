@@ -11,10 +11,20 @@
     <p>Two</p>
     <p>Three</p>
     <button type="submit" onclick="ubahUrutan()">Ubah urutan</button>
+    <br><br>
+    <p id="para">Nice text</p>
+    <button type="submit" onclick="ubahWarnaText()">Ubah warna text</button>
     <script>
+        // changing the document
         function ubahUrutan(){
             paragraphs = document.getElementsByTagName("p")
             document.body.insertBefore(paragraphs[2], paragraphs[0]);
+        }
+
+        // styling -> mengubah warna teks menjadi hijau
+        function ubahWarnaText(){
+            let para = document.getElementById("para");
+            para.style.color = "green";
         }
     </script>
 </body>
