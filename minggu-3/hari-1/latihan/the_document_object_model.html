@@ -1,18 +1,21 @@
-<!-- DOM (Document Objject MOdel) adalah interface pemrograman untuk dokumen web.
-DOM merepresentasikan halaman sehingga program dapat mengubah struktur, style, dan konten dokumen
-DOM merepresentasikan dokumen sebagai node dan objek -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Pengenalan DOM">
-    <meta name="author" content="Retno Wati">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengenalan DOM</title>
+    <title>Document</title>
 </head>
-<body onload="console.log('Welcome!')">
-
+<body>
+    <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+    <button type="submit" onclick="ubahUrutan()">Ubah urutan</button>
+    <script>
+        function ubahUrutan(){
+            paragraphs = document.getElementsByTagName("p")
+            document.body.insertBefore(paragraphs[2], paragraphs[0]);
+        }
+    </script>
 </body>
 </html>
